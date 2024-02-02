@@ -1,5 +1,3 @@
-package FreeTIme;
-
 import java.util.Scanner;
 
 public class GrocerStoreTester {
