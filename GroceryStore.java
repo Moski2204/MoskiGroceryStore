@@ -1,5 +1,3 @@
-package FreeTIme;
-
 public class GroceryStore {
 
     String egg = "Eggs";
