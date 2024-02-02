@@ -29,10 +29,10 @@ public class GroceryStoreTester {
         System.out.println("Meat - $" + store.priceOfMeat);
         System.out.println("Fish - $" + store.priceOfFish);
         System.out.println();
-
-        System.out.println("Please type the name of the following item's above that you'd like to buy.");
+        ;
         while (store.personalMoney > 0) {
             Scanner choice = new Scanner(System.in);
+            System.out.println("What would you like to buy?");
             String myChoice = choice.nextLine();
             if (myChoice.equalsIgnoreCase("Milk")) {
                 store.boughtMilk();
@@ -47,23 +47,20 @@ public class GroceryStoreTester {
                 store.boughtFish();
             }
             else {
+                System.out.println();
                 System.out.println("Invalid input. Please try again!");
                 continue;
             }
+            System.out.println("You have $" + store.personalMoney + " in your account.");
+            System.out.println();
             if (store.personalMoney < 0) {
-                System.out.println("You have $" + store.personalMoney + " in your account.");
                 System.out.println("You are bankrupt... Goodbye!");
                 break;
             } else if (store.personalMoney == 0) {
-                System.out.println("You have $0 left in your account.");
                 System.out.println("MMM (Make More Money)!");
-            } else {
-                System.out.println("You have $" + store.personalMoney + " left in your account.");
             }
         }
 
+
     }
 }
-
-
-
