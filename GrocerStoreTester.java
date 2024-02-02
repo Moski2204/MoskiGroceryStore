@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class GrocerStoreTester {
+public class GroceryStoreTester {
 
     public static void main(String args[]) {
         GroceryStore store = new GroceryStore();
