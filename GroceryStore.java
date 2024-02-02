@@ -10,26 +10,28 @@ public class GroceryStore {
     int priceOfMilk = 50;
     int personalMoney = 1000;
 
-    void boughtMilk(){
-            personalMoney = personalMoney - priceOfMilk;
-            System.out.println();
-            System.out.println("You bought Milk which is $" + priceOfMilk + "." );
-        }
-    void boughtEgg(){
+    void boughtMilk() {
+        personalMoney = personalMoney - priceOfMilk;
+        System.out.println();
+        System.out.println("You bought Milk which is $" + priceOfMilk + ".");
+    }
+
+    void boughtEgg() {
         personalMoney = personalMoney - priceOfEgg;
         System.out.println();
-        System.out.println("You bought Eggs which is $" + priceOfEgg + "." );
+        System.out.println("You bought Eggs which is $" + priceOfEgg + ".");
     }
-    void boughtMeat(){
+
+    void boughtMeat() {
         personalMoney = personalMoney - priceOfMeat;
         System.out.println();
-        System.out.println("You bought Meat which is $" + priceOfMeat + "." );
+        System.out.println("You bought Meat which is $" + priceOfMeat + ".");
     }
-    void boughtFish(){
+
+    void boughtFish() {
         personalMoney = personalMoney - priceOfFish;
         System.out.println();
-        System.out.println("You bought Fish which is $" + priceOfFish + "." );
+        System.out.println("You bought Fish which is $" + priceOfFish + ".");
     }
 
-    }
-
+}
